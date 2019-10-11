@@ -11,4 +11,8 @@ struct complex{
     double r;
     double q;
 };
+
+std::istream& operator>> (std::istream& is,complex& m);
+std::ostream& operator<< (std::ostream& os,const complex& m);
+complex operator""_angle(long double q);
 #endif

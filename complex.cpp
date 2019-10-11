@@ -20,3 +20,19 @@ complex& complex::operator/=(const complex &o) {
     q=q-o.q;
     return *this;
 }
+
+std::istream& operator>> (std::istream& is,complex& m){
+    is >> m.r >> m.q;
+    return is;
+}
+std::ostream& operator<< (std::ostream& os,const complex& m){
+    os << m.r << " " << m.q <<"\n";
+    return os;
+}
+
+complex operator""_angle(long double q){
+    complex d;
+    d.r=1;
+    d.q=q;
+    return d;
+}

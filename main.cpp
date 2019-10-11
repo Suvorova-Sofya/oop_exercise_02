@@ -2,7 +2,6 @@
 #include "complex.h"
 #include <math.h>
 
-
 complex operator+ (complex w1,complex w2){
     complex w3;
     double a1,b1,a2,b2,a3,b3;
@@ -58,14 +57,6 @@ complex& operator- (complex& w1){
     return w1;
 }
 
-std::istream& operator>> (std::istream& is,complex& m){
-    is >> m.r >> m.q;
-    return is;
-}
-std::ostream& operator<< (std::ostream& os,const complex& m){
-    os << m.r << " " << m.q <<"\n";
-    return os;
-}
 
 int main() {
     complex w1;
@@ -75,7 +66,6 @@ int main() {
     if((w1.r<0) || (w2.r<0)){
         std::cout << "Модуль не может быть отрицательным " << std::endl;
     }else {
-
         std::cout << "+ :";
         std::cout << w1+w2;
         std::cout << "- :";
