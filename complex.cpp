@@ -79,14 +79,12 @@ complex operator/ (complex w1,complex w2){
 }
 
 bool operator== (complex w1,complex w2){
-    if((w1.r==w2.r)&&(w1.q==w2.q)){
-        return true;
-    }else{
-        return false;
-    }
+    return (w1.r==w2.r)&&(w1.q==w2.q);
 }
 
-complex& cong(complex& w1){
-    w1.q=-w1.q;
-    return w1;
+complex cong(complex w1){
+    complex w2;
+    w2.r=w1.r;
+    w2.q=-w1.q;
+    return w2;
 }
