@@ -26,7 +26,7 @@ int main() {
             std::cout << "Не равны" << "\n";
         }
         std::cout << "Сопряженое первого комплексного числа :";
-        std::cout << -w1;
+        std::cout << cong(w1);
     }
     return 0;
 }

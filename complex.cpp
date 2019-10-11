@@ -86,7 +86,7 @@ bool operator== (complex w1,complex w2){
     }
 }
 
-complex& operator- (complex& w1){
+complex& cong(complex& w1){
     w1.q=-w1.q;
     return w1;
 }

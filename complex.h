@@ -20,5 +20,5 @@ complex operator- (complex w1,complex w2);
 complex operator* (complex w1,complex w2);
 complex operator/ (complex w1,complex w2);
 bool operator== (complex w1,complex w2);
-complex& operator- (complex& w1);
+complex& cong(complex& w1);
 #endif
